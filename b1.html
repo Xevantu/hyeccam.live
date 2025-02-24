@@ -1,0 +1,21 @@
+<head>
+    <script defer src="https://portal.dev.vortexcloud.com/vortex-streaming.min.js"></script>
+</head>
+<body>
+    <vortex-streaming
+    api-token="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJmN2M2YTUyMS0zNTczLTQ5YjctYWRhNi1kMTljMjNhNmZmNGUiLCJpc3MiOiJhcGkudm9ydGV4Y2xvdWQuY29tIiwic3ViIjoiZjdjNmE1MjEtMzU3My00OWI3LWFkYTYtZDE5YzIzYTZmZjRlIiwiYXVkIjpbImFwaS52b3J0ZXhjbG91ZC5jb20iXSwiZXhwIjoxNzQxOTEzMjY1LCJuYmYiOjE3MzkzMjEyNjUsImlhdCI6MTczOTMyMTI2NSwianRpIjoiMGFkZjI0YWItNmIyMC00MTI1LThkYzgtYjc1M2Q2Yjg0MjA1In0.KleOqR8jRWVscpbXgfFM1PZOB6OOehr9384VCyviezF7b4YZVdpgqWoIB99s3ezPH2eobi__NYpkqhJXKnSxH8mCcNq78raCkqFZ1AWs6Rcpl9nBxXOaZkvGPB4cPIrZDQ1G7T5abj7S93sNl6CS0NY5RmVsdcondzcS1jbs5tS53909Jw6AlwT0eRFGhZF-LXEPz4FsRuSnR7Rarw35anBl5vBuiFPjj4zJAj3DDhRrJ_qdFmkLVo89X4aI449IamyWCVt9u7rQlzl_b8wof8hLcMqeyV94McpotZAYXGjsNwSATpAHm7NII8OFus-btJbToXKitetcXbqhOgdfMQ"
+    device-id="0002D1BAEE91-1739153466782"
+    auto-play="true"
+    volume="50"
+    muted="false"
+    ></vortex-streaming>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const element = document.querySelector('vortex-streaming');
+        // Add event listener
+        element.addEventListener('play', () => {
+        console.log('streaming started');
+        });
+    });
+    </script>
+</body>
